@@ -1,10 +1,10 @@
-# Code Academy Uganda - Accounting Software MVP
+# Code Academy Uganda - Complete Accounting System
 
-A simple, intuitive accounting system designed specifically for Code Academy Uganda to track income, expenses, and profitability by program or service.
+A comprehensive, full-featured accounting system designed specifically for Code Academy Uganda to manage all financial operations including income tracking, expense management, assets, budgeting, payroll, and detailed financial reporting.
 
-## 🎯 MVP Goal
+## 🎯 System Overview
 
-Track income, expenses, and profitability by program with core accounting functions and room for expansion.
+Complete accounting solution with advanced features for educational institutions, including program-based financial tracking, multi-currency support, asset management, budget planning, payroll processing, and accounts receivable management.
 
 ## ✨ Key Features
 
@@ -14,16 +14,28 @@ Track income, expenses, and profitability by program with core accounting functi
 - **Chart of Accounts** - Complete accounting structure (Assets, Liabilities, Income, Expenses, Equity)
 - **Sales / Income Tracking** - Record program-linked income with invoice management
 - **Expense Management** - Track spending with receipt attachments and categorization
-- **Vendors & Customers** - Maintain contact databases
-- **Comprehensive Reports** - Profit & Loss by Program, Expense Breakdown, Sales Analysis
+- **Vendors & Customers** - Maintain contact databases with payment history
+- **Asset Management** - Track fixed assets, depreciation, maintenance, and assignments
+- **Budget Management** - Create program budgets, track actual vs budget, and manage reallocations
+- **Multi-Currency Support** - Handle transactions in multiple currencies with automatic conversion
+- **Payroll System** - Process staff payroll with automatic journal entries
+- **Accounts Receivable** - Student invoicing, payment plans, installments, and payment tracking
+- **Fee Structures & Scholarships** - Manage program fees and student scholarships
+- **Activity Logging** - Comprehensive audit trail for all system activities
 - **User Management** - Admin and Accountant roles with secure access control
 - **Company Settings** - Configure company info, currency (UGX), fiscal year, and preferences
 
 ### 2. Key Reports
 
 ✅ **Profit & Loss by Program** - View income, expenses, and profit for each program
+✅ **Budget vs Actual** - Compare actual spending against budgeted amounts
 ✅ **Expense Breakdown** - Analyze spending by category, program, or vendor
 ✅ **Sales by Program** - Track revenue performance per program
+✅ **Asset Reports** - Track asset values, depreciation, and assignments
+✅ **Accounts Receivable Aging** - Monitor outstanding student payments
+✅ **Currency Conversion Reports** - Track multi-currency transactions
+✅ **Payroll Reports** - View payroll summaries and history
+✅ **Activity Logs** - Comprehensive audit trail reports
 ✅ **Dashboard** - Real-time overview with key metrics and trends
 
 ### 3. Export Capabilities
@@ -155,31 +167,73 @@ Navigate to **Settings > Company** to:
 | Feature | QuickBooks | This System |
 |---------|-----------|-------------|
 | Program Tracking | Uses "Classes" (cumbersome) | Programs are core entities |
+| Education Focus | Generic business tool | Built for educational institutions |
+| Student Management | Not available | Full student invoicing & payment plans |
+| Asset Management | Basic tracking | Complete with depreciation & maintenance |
+| Budget Management | Limited | Program-based budgets with reallocations |
+| Multi-Currency | Paid tier only | Built-in with automatic conversion |
 | Local Fit | Needs customization | Native UGX and education model |
 | Offline Access | Mostly cloud/paid | Offline capable with sync |
 | Custom Reports | Limited templates | Fully customizable |
 | Cost | Monthly subscription | One-time/internal use |
 
-## 🔄 Future Enhancements (Post-MVP)
+## 🔄 Recent Enhancements
 
-- ✨ Budget vs Actual comparison per program
+- ✅ Budget vs Actual comparison per program
+- ✅ Asset management with depreciation tracking
+- ✅ Multi-currency support with exchange rates
+- ✅ Payroll processing system
+- ✅ Student invoicing and payment plans
+- ✅ Budget reallocation workflows
+- ✅ Activity logging and audit trails
+- ✅ Scholarship management
+- ✅ Payment reminders and notifications
+
+## 🚧 Future Enhancements
+
 - 🏦 Bank reconciliation
-- 💰 Payroll module for facilitators
-- 📦 Inventory tracking for STEM kits
 - 📄 PDF receipt and invoice generator
-- 📈 Advanced dashboard charts
+- 📈 Advanced dashboard charts with drill-downs
 - 🏢 Multi-site program tracking
+- 📱 Mobile app for expense capture
+- 🔔 Advanced notification system
+- 📊 Custom report builder
 
 ## 🗂️ Database Schema
 
 ### Core Tables
 - `users` - System users with roles
 - `programs` - Educational programs/projects
+- `program_budgets` - Program budget planning and tracking
+- `budget_reallocations` - Budget reallocation requests and approvals
 - `accounts` - Chart of accounts
 - `sales` - Income transactions
 - `expenses` - Expense transactions
 - `customers` - Customer contacts
 - `vendors` - Vendor contacts
+- `vendor_invoices` - Vendor invoice tracking
+- `vendor_payments` - Vendor payment records
+- `students` - Student information
+- `student_invoices` - Student billing
+- `student_invoice_items` - Invoice line items
+- `student_payments` - Student payment records
+- `payment_plans` - Student payment plan configurations
+- `payment_plan_installments` - Installment schedules
+- `payment_allocations` - Payment distribution across invoices
+- `payment_reminders` - Automated payment notifications
+- `fee_structures` - Program fee configurations
+- `scholarships` - Scholarship definitions
+- `student_scholarships` - Student scholarship assignments
+- `assets` - Fixed asset tracking
+- `asset_categories` - Asset classification
+- `asset_assignments` - Asset assignment to staff/programs
+- `asset_maintenance` - Maintenance records
+- `currencies` - Currency definitions
+- `exchange_rates` - Historical exchange rates
+- `staff` - Staff member records
+- `payroll_items` - Payroll configuration items
+- `payroll_runs` - Payroll processing records
+- `activity_logs` - System audit trail
 - `company_settings` - System configuration
 
 ## 🔒 Security
@@ -197,14 +251,22 @@ For issues or questions:
 - Email: admin@codeacademy.ug
 - Check application logs: `storage/logs/laravel.log`
 
-## ✅ MVP Success Criteria
+## ✅ System Status
 
-The MVP is complete when you can:
-- ✅ Record income & expenses by program
-- ✅ View profit/loss by program at a glance
-- ✅ Export reports (CSV)
-- ✅ Track outstanding payments
-- ✅ Invite users to manage records
+The system is **production-ready** with the following capabilities:
+- ✅ Complete financial transaction recording and tracking
+- ✅ Program-based accounting and profitability analysis
+- ✅ Full asset lifecycle management
+- ✅ Budget planning and monitoring
+- ✅ Multi-currency transaction support
+- ✅ Comprehensive payroll processing
+- ✅ Student accounts receivable management
+- ✅ Payment plans and installment tracking
+- ✅ Scholarship management
+- ✅ Vendor invoice and payment tracking
+- ✅ Complete audit trail and activity logging
+- ✅ Robust reporting suite with export capabilities
+- ✅ Role-based access control and security
 
 ## 📝 License
 
